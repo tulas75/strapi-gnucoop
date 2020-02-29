@@ -1,0 +1,48 @@
+{
+  "info": {
+    "name": "Stuff"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true
+    },
+    "feature_image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "header_image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "gallery": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "category": {
+      "model": "category"
+    },
+    "tags": {
+      "collection": "tag"
+    }
+  },
+  "connection": "default",
+  "collectionName": "stuffs"
+}
