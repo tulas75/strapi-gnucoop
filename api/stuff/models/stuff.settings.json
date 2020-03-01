@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "stuffs",
   "info": {
     "name": "Stuff"
   },
@@ -41,8 +43,13 @@
     },
     "tags": {
       "collection": "tag"
+    },
+    "published": {
+      "type": "boolean",
+      "default": false
+    },
+    "slug": {
+      "type": "string"
     }
-  },
-  "connection": "default",
-  "collectionName": "stuffs"
+  }
 }
